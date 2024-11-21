@@ -73,7 +73,7 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/farrelathalla/Technical-Case-Study-Purple-Fox.git
+   git clone https://github.com/farrelathalla/Technical-Case-Study-Purple-Box.git
    cd 3-form-app
    
 2. **Install dependencies:**
