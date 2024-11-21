@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Form Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+This web application showcases a fully functional form with diverse input fields. The form includes robust validation and displays the entered information on a dedicated review page. Built with React for the front-end, it leverages Redux for efficient state handling and React Router for seamless navigation between pages.
 
-## Available Scripts
+### Key Features
 
-In the project directory, you can run:
+- **Validation** : Comprehensive input validation for multiple field types.
+- **Redux** : State management implemented using Redux.
+- **Navigaton** : Smooth page transitions powered by React Router.
+- **Responsive** : Mobile-friendly design using responsive media queries.
+- **Animations** : Engaging animations to enhance user interaction and experience.
 
-### `npm start`
+## Program Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application's structure is organized as follows:
+```sh
+/3-form-app
+├── /public
+│   ├── texture.svg
+│   └── ...
+├── /src
+│   ├── /components
+│   │   └── FormField.jsx
+│   ├── /features
+│   │   └── formSlice.js
+│   ├── /pages
+│   │   ├── FormPage.jsx
+│   │   └── ReviewPage.jsx
+│   ├── App.css
+│   ├── App.js
+│   ├── ...   
+├── package.json
+└── README.md
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Key Directories:
+- **/public:** Stores static assets that can be accessed publicly.
+- **/src:** Contains all reusable components, features, and pages.
+- **/src/components:** Contains all reusable components used across the application.
+- **/src/features:** Feature for website.
+- **/src/pages:** Different pages on the website.
 
-### `npm test`
+## Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project relies on the following libraries and tools:
 
-### `npm run build`
+| **Dependency**                | **Description**                                                       | **Version**   |
+|--------------------------------|-----------------------------------------------------------------------|---------------|
+| **@reduxjs/toolkit**           | Efficient state management for modern Redux applications.             | ^2.3.0        |
+| **@testing-library/jest-dom**  | Custom Jest matchers for DOM node testing.                            | ^5.17.0       |
+| **@testing-library/react**     | Tools for testing React components.                                   | ^13.4.0       |
+| **@testing-library/user-event**| Utilities for simulating user interactions in tests.                  | ^13.5.0       |
+| **react**                      | JavaScript library for building user interfaces.                      | ^18.3.1       |
+| **react-dom**                  | DOM rendering for React applications.                                 | ^18.3.1       |
+| **react-redux**                | Official bindings for using Redux with React.                         | ^9.1.2        |
+| **react-router-dom**           | Declarative routing for React web applications.                       | ^6.28.0       |
+| **react-scripts**              | Scripts and configuration for building and running a React app.       | 5.0.1         |
+| **web-vitals**                 | Tools for measuring essential web performance metrics.                | ^2.1.4        |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to get the website up and running on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Ensure you have the following installed:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Node.js**: [Download here](https://nodejs.org/)
+- **npm**: Included with Node.js [More info](https://www.npmjs.com/get-npm)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/farrelathalla/Technical-Case-Study-Purple-Fox.git
+   cd 3-form-app
+   
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the Website
 
-## Learn More
+To start the development server, run:
+   ```bash
+   npm start
+   ```
+<p>The application will be available at <b>http://localhost:3000.</b></p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To build the application for production, run:
 
-### Code Splitting
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Run test
 
-### Analyzing the Bundle Size
+Run the tests defined in the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm test
+   ```
